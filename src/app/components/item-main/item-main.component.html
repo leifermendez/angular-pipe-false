@@ -1,0 +1,11 @@
+<div class="item">
+    <div class="title">
+        {{data?.name}}
+    </div>
+    <div class="image">
+        <img [src]="data?.image" alt="">
+    </div>
+    <div class="price">
+        <span>Desde <b>{{data?.price | currencyChange}}</b></span>
+    </div>
+</div>

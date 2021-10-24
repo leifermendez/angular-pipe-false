@@ -1,0 +1,20 @@
+<div class="header">
+    <div class="left">
+        <div class="logo"><i class="uil uil-apple"></i> </div>
+        <span>Apple Store</span>
+    </div>
+    <div class="right">
+        <ul class="list-menu">
+            <li *ngFor="let c of currencies | slice:0:14" (click)="setCurrency(c?.symbol,c?.value)">
+                {{c?.symbol}}
+            </li>
+            <!-- <li (click)="setCurrency('USD',1)">USD</li>
+            <li (click)="setCurrency('EUR',.89)">EUR</li>
+            <li (click)="setCurrency('$MXN',20.17)">MXN</li>
+            <li (click)="setCurrency('$COP',3700)">COP</li> -->
+        </ul>
+        <ul class="list-menu">
+            <li *ngFor="let a of links">{{a?.name}}</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.wrapper {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    grid-column-start: 1;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.section h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+.wrapper-showcase {
+    display: grid;
+}
